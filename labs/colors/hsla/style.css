@@ -1,0 +1,14 @@
+
+* {
+  --color-primary: 80, 85%, 48%;
+}
+
+.color-primary {
+  color: hsla(var(--color-primary), var(--color-opacity, 1));
+}
+.bg-primary {
+  background-color: hsla(var(--color-primary), var(--bg-opacity, 1));
+}
+.border-primary {
+  border-color: hsla(var(--color-primary), var(--border-opacity, 1));
+}

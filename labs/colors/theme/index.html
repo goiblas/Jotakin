@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="toggle.css">
+</head>
+<body>
+      <input class="toggle" id="toggle" type="checkbox" />
+      <label for="toggle"></label>
+
+      <div class="container">
+
+        <h1>HTML Ipsum Presents</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quisquam assumenda ducimus, minima esse blanditiis dolor veritatis earum asperiores, voluptatum mollitia? Dolorem blanditiis ratione repellat facere, harum quae dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aperiam in atque. Unde, amet debitis porro reiciendis, perspiciatis ipsam ex fuga, sunt dolores voluptatem fugit expedita dolorum praesentium repellendus assumenda.</p>
+        
+        <h2>Header Level 2</h2>
+        
+        <ol>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <button class="button-primary">Send</button>
+      </div>
+      <aside data-theme="blue">
+        <div class="container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates doloribus necessitatibus animi sapiente similique, aspernatur, dolorum fuga in autem atque commodi, voluptatibus sed voluptatem amet rem mollitia at est.</p>
+          <p>Consequuntur cum soluta, sapiente libero saepe voluptatem ab officiis est voluptas laboriosam maxime tenetur esse deleniti aliquam corrupti sequi. Esse rerum, vero tempore vel quia itaque ex saepe velit et.</p>
+        </div>
+      </aside>
+
+      <script>
+        const toggle = document.getElementById("toggle");
+        toggle.addEventListener('change', function() {
+          document.documentElement.setAttribute('data-theme', this.checked ? "dark" : "light")
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --color-secondary: hsla(80, 85%, 48%, var(--color-opacity, 1));
+}
+
+* {
+  --color-primary: hsla(80, 85%, 48%, var(--color-opacity, 1));
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-opacity-30\% {
+  --bg-opacity: .3;
+}
+
+.color-opacity-10\% {
+  --color-opacity: .1
+}
+.color-opacity-20\% {
+  --color-opacity: .2
+}
+.color-opacity-30\% {
+  --color-opacity: .3
+}
+.color-opacity-40\% {
+  --color-opacity: .4
+}
+.color-opacity-50\% {
+  --color-opacity: .5
+}
+.color-opacity-60\% {
+  --color-opacity: .6
+}
+.color-opacity-70\% {
+  --color-opacity: .7
+}
+.color-opacity-80\% {
+  --color-opacity: .8
+}
+.color-opacity-90\% {
+  --color-opacity: .9
+}

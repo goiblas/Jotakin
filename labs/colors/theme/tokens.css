@@ -1,0 +1,147 @@
+/* Color system */
+/* https://github.com/primer/css/blob/master/src/support/variables/color-system.scss */
+:root {
+  /* colors */
+  --color-primary-100: #f4fdce;
+  --color-primary-200: #e7fc9f;
+  --color-primary-300: #d3f76e;
+  --color-primary-400: #beef49;
+  --color-primary-500: #9fe512;
+  --color-primary-600: #81c40d;
+  --color-primary-700: #66a409;
+  --color-primary-800: #4d8405;
+  --color-primary-900: #3c6d03;
+
+  --color-secondary-100: #fddbd2;
+  --color-secondary-200: #fbafa7;
+  --color-secondary-300: #f57a79;
+  --color-secondary-400: #ec5765;
+  --color-secondary-500: #e02447;
+  --color-secondary-600: #c01a49;
+  --color-secondary-700: #a11247;
+  --color-secondary-800: #810b43;
+  --color-secondary-900: #6b063f;
+
+  /* https://gka.github.io/palettes/#/11|s|1c1c21,ffffff|ffffe0,ff005e,93003a|1|1 */
+  --color-neutral-100: #e2e2e3;
+  --color-neutral-200: #c7c6c8;
+  --color-neutral-300: #ababae;
+  --color-neutral-400: #919194;
+  --color-neutral-500: #77777b;
+  --color-neutral-600: #5f5f63;
+  --color-neutral-700: #47474c;
+  --color-neutral-800: #313136;
+  --color-neutral-900: #1c1c21;
+
+  --color-black: #1c1c21;
+  --color-white: #ffffff;
+}
+
+/* theme */
+:root {
+  --color-contrast-000: var(--color-white);
+  --color-contrast-100: var(--color-neutral-100);
+  --color-contrast-200: var(--color-neutral-200);
+  --color-contrast-300: var(--color-neutral-300);
+  --color-contrast-400: var(--color-neutral-400);
+  --color-contrast-500: var(--color-neutral-500);
+  --color-contrast-600: var(--color-neutral-600);
+  --color-contrast-700: var(--color-neutral-700);
+  --color-contrast-800: var(--color-neutral-800);
+  --color-contrast-900: var(--color-neutral-900);
+
+  /* drak: usefull for shadow, backgrounds,... */
+  --rgb-color-dark: 67, 67, 71;
+  --color-dark: rgb(var(--rgb-color-dark));
+  --color-dark-fade-100: rgba(var(--rgb-color-dark), .06);
+  --color-dark-fade-200: rgba(var(--rgb-color-dark), .12);
+  --color-dark-fade-300: rgba(var(--rgb-color-dark), .25);
+  --color-dark-fade-400: rgba(var(--rgb-color-dark), .32);
+  --color-dark-fade-500: rgba(var(--rgb-color-dark), .48);
+  --color-dark-fade-600: rgba(var(--rgb-color-dark), .62);
+  --color-dark-fade-700: rgba(var(--rgb-color-dark), .72);
+  --color-dark-fade-800: rgba(var(--rgb-color-dark), .80);
+  --color-dark-fade-900: rgba(var(--rgb-color-dark), .96);
+
+  /* light: usefull for shadow, backgrounds,... */
+  --rgb-color-light: 255, 255, 255;
+  --color-light: rgba(var(--rgb-color-light), 1);
+  --color-light-fade-100: rgba(var(--rgb-color-light), .06);
+  --color-light-fade-200: rgba(var(--rgb-color-light), .12);
+  --color-light-fade-300: rgba(var(--rgb-color-light), .25);
+  --color-light-fade-400: rgba(var(--rgb-color-light), .32);
+  --color-light-fade-500: rgba(var(--rgb-color-light), .48);
+  --color-light-fade-600: rgba(var(--rgb-color-light), .62);
+  --color-light-fade-700: rgba(var(--rgb-color-light), .72);
+  --color-light-fade-800: rgba(var(--rgb-color-light), .80);
+  --color-light-fade-900: rgba(var(--rgb-color-light), .96);
+}
+
+body {
+  color: var(--color-contrast-600);
+  background-color: var(--color-contrast-000);
+}
+
+h1, h2 {
+ color: var(--color-contrast-900);
+}
+
+label {
+  font-size: .8rem;
+  display: block;
+  padding: 2rem 0 .25rem;
+  color: var(--color-contrast-400);
+}
+
+input[type="text"] {
+  border: 1px solid var(--color-contrast-200);
+  background-color: var(--color-contrast-000);
+  color: var(--color-contrast-900);
+}
+input[type="text"]:focus {
+  border-color: var(--color-contrast-600);
+  outline: 0;
+}
+
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary-700);
+  border: 0;
+  border-radius: 3px;
+  box-shadow: var(--color-dark-fade-500) 0 3px 5px -2px;
+}
+
+
+aside {
+  padding: 3rem 0;
+  margin: 3rem 0;
+  background-color: var(--color-dark-fade-100);
+  color: var(--color-contrast-500);
+}
+
+
+[data-theme="dark"] {
+  --color-contrast-000: var(--color-black);
+  --color-contrast-100: var(--color-neutral-900);
+  --color-contrast-200: var(--color-neutral-800);
+  --color-contrast-300: var(--color-neutral-700);
+  --color-contrast-400: var(--color-neutral-600);
+  --color-contrast-500: var(--color-neutral-500);
+  --color-contrast-600: var(--color-neutral-400);
+  --color-contrast-700: var(--color-neutral-300);
+  --color-contrast-800: var(--color-neutral-200);
+  --color-contrast-900: var(--color-neutral-100);
+
+  /* si el atributo se cambia en la etiqueta html lo es necesario cambiar el rgb */
+  --rgb-color-dark: 0, 0, 0;
+  /* --color-dark: rgba(var(--rgb-color-dark), 1);
+  --color-dark-fade-100: rgba(var(--rgb-color-dark), .06);
+  --color-dark-fade-200: rgba(var(--rgb-color-dark), .12);
+  --color-dark-fade-300: rgba(var(--rgb-color-dark), .25);
+  --color-dark-fade-400: rgba(var(--rgb-color-dark), .32);
+  --color-dark-fade-500: rgba(var(--rgb-color-dark), .48);
+  --color-dark-fade-600: rgba(var(--rgb-color-dark), .62);
+  --color-dark-fade-700: rgba(var(--rgb-color-dark), .72);
+  --color-dark-fade-800: rgba(var(--rgb-color-dark), .80);
+  --color-dark-fade-900: rgba(var(--rgb-color-dark), .96); */
+}

@@ -1,0 +1,38 @@
+
+body {
+  padding-top: 5rem;
+}
+
+.toggle {
+  position: absolute;
+  display: none; }
+
+  .toggle + label {
+    --size: 60px;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: var(--size);
+    height: calc( var(--size) / 2);
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    background-color: #dfe3ec;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all .4s ease; }
+    input + label::after {
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #2b46df;
+      transition: all .2s ease;
+      cursor: pointer; }
+  .toggle:checked + label {
+    background-color: #fff; }
+    .toggle:checked + label::after {
+      transform: translateX(100%); }
