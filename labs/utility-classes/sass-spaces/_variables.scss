@@ -1,0 +1,37 @@
+$space-1: 8px;
+$space-2: 16px;
+$space-3: 24px;
+$space-4: 32px;
+$space-5: 40px;
+
+$spaces: (
+  0: 0,
+  1: $space-1,
+  2: $space-2,
+  3: $space-3,
+  4: $space-4,
+  5: $space-5
+);
+
+// Breakpoint
+// --------------------------------------
+$width-xs: 0;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+
+$breakpoints: (
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl
+);
+
+$responsive-variants: (
+  "": "",
+  sm: "sm-",
+  md: "md-",
+  lg: "lg-",
+  xl: "xl-"
+);

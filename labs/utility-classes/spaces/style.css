@@ -1,7 +1,118 @@
 :root {
-  --space: 8;
+  --space: 8px;
 }
 
-.special-section {
-  --space: 12;
+.big-section,
+.big-section * {
+  --space: 20px;
+}
+
+* {
+  --_mt: var(--mt, var(--my, var(--m, 0)));
+  margin-top: calc(var(--_mt) * var(--space));
+  --_mr: var(--mr, var(--mx, var(--m, 0)));
+  margin-right: calc(var(--_mr) * var(--space));
+  --_mb: var(--mb, var(--my, var(--m, 0)));
+  margin-bottom: calc(var(--_mb) * var(--space));
+  --_ml: var(--ml, var(--mx, var(--m, 0)));
+  margin-left: calc(var(--_ml) * var(--space));
+
+  --_pt: var(--pt, var(--py, var(--p, 0)));
+  padding-top: calc(var(--_pt) * var(--space));
+  --_pr: var(--pr, var(--px, var(--p, 0)));
+  padding-right: calc(var(--_pr) * var(--space));
+  --_pb: var(--pb, var(--py, var(--p, 0)));
+  padding-bottom: calc(var(--_pb) * var(--space));
+  --_pl: var(--pl, var(--px, var(--p, 0)));
+  padding-left: calc(var(--_pl) * var(--space));
+}
+@media (min-width: 544px) {
+  * {
+    --_sm-mt: var(--sm-mt, var(--sm-my, var(--sm-m, var(--_mt))));
+    margin-top: calc(var(--_sm-mt) * var(--space));
+    --_sm-mr: var(--sm-mr, var(--sm-mx, var(--sm-m, var(--_mr))));
+    margin-right: calc(var(--_sm-mr) * var(--space));
+    --_sm-mb: var(--sm-mb, var(--sm-my, var(--sm-m, var(--_mb))));
+    margin-bottom: calc(var(--_sm-mb) * var(--space));
+    --_sm-ml: var(--sm-ml, var(--sm-mx, var(--sm-m, var(--_ml))));
+    margin-left: calc(var(--_sm-ml) * var(--space));
+
+    --_sm-pt: var(--sm-pt, var(--sm-py, var(--sm-p, var(--_pt))));
+    padding-top: calc(var(--_sm-pt) * var(--space));
+    --_sm-pr: var(--sm-pr, var(--sm-px, var(--sm-p, var(--_pr))));
+    padding-right: calc(var(--_sm-pr) * var(--space));
+    --_sm-pb: var(--sm-pb, var(--sm-py, var(--sm-p, var(--_pb))));
+    padding-bottom: calc(var(--_sm-pb) * var(--space));
+    --_sm-pl: var(--sm-pl, var(--sm-px, var(--sm-p, var(--_pl))));
+    padding-left: calc(var(--_sm-pl) * var(--space));
+  }
+}
+@media (min-width: 768px) {
+  * {
+    --_md-mt: var(--md-mt, var(--md-my, var(--md-m, var(--_sm-mt))));
+    margin-top: calc(var(--_md-mt) * var(--space));
+    --_md-mr: var(--md-mr, var(--md-mx, var(--md-m, var(--_sm-mr))));
+    margin-right: calc(var(--_md-mr) * var(--space));
+    --_md-mb: var(--md-mb, var(--md-my, var(--md-m, var(--_sm-mb))));
+    margin-bottom: calc(var(--_md-mb) * var(--space));
+    --_md-ml: var(--md-ml, var(--md-mx, var(--md-m, var(--_sm-ml))));
+    margin-left: calc(var(--_md-ml) * var(--space));
+
+    --_md-pt: var(--md-pt, var(--md-py, var(--md-p, var(--_sm-pt))));
+    padding-top: calc(var(--_md-pt) * var(--space));
+    --_md-pr: var(--md-pr, var(--md-px, var(--md-p, var(--_sm-pr))));
+    padding-right: calc(var(--_md-pr) * var(--space));
+    --_md-pb: var(--md-pb, var(--md-py, var(--md-p, var(--_sm-pb))));
+    padding-bottom: calc(var(--_md-pb) * var(--space));
+    --_md-pl: var(--md-pl, var(--md-px, var(--md-p, var(--_sm-pl))));
+    padding-left: calc(var(--_md-pl) * var(--space));
+  }
+}
+@media (min-width: 1012px) {
+  * {
+    --_lg-mt: var(--lg-mt, var(--lg-my, var(--lg-m, var(--_md-mt))));
+    margin-top: calc(var(--_lg-mt) * var(--space));
+    --_lg-mr: var(--lg-mr, var(--lg-mx, var(--lg-m, var(--_md-mr))));
+    margin-right: calc(var(--_lg-mr) * var(--space));
+    --_lg-mb: var(--lg-mb, var(--lg-my, var(--lg-m, var(--_md-mb))));
+    margin-bottom: calc(var(--_lg-mb) * var(--space));
+    --_lg-ml: var(--lg-ml, var(--lg-mx, var(--lg-m, var(--_md-ml))));
+    margin-left: calc(var(--_lg-ml) * var(--space));
+
+    --_lg-pt: var(--lg-pt, var(--lg-py, var(--lg-p, var(--_md-pt))));
+    padding-top: calc(var(--_lg-pt) * var(--space));
+    --_lg-pr: var(--lg-pr, var(--lg-px, var(--lg-p, var(--_md-pr))));
+    padding-right: calc(var(--_lg-pr) * var(--space));
+    --_lg-pb: var(--lg-pb, var(--lg-py, var(--lg-p, var(--_md-pb))));
+    padding-bottom: calc(var(--_lg-pb) * var(--space));
+    --_lg-pl: var(--lg-pl, var(--lg-px, var(--lg-p, var(--_md-pl))));
+    padding-left: calc(var(--_lg-pl) * var(--space));
+  }
+}
+@media (min-width: 1280px) {
+  * {
+    --_xl-mt: var(--xl-mt, var(--xl-my, var(--xl-m, var(--_lg-mt))));
+    margin-top: calc(var(--_xl-mt) * var(--space));
+    --_xl-mr: var(--xl-mr, var(--xl-mx, var(--xl-m, var(--_lg-mr))));
+    margin-right: calc(var(--_xl-mr) * var(--space));
+    --_xl-mb: var(--xl-mb, var(--xl-my, var(--xl-m, var(--_lg-mb))));
+    margin-bottom: calc(var(--_xl-mb) * var(--space));
+    --_xl-ml: var(--xl-ml, var(--xl-mx, var(--xl-m, var(--_lg-ml))));
+    margin-left: calc(var(--_xl-ml) * var(--space));
+
+    --_xl-pt: var(--xl-pt, var(--xl-py, var(--xl-p, var(--_lg-pt))));
+    padding-top: calc(var(--_xl-pt) * var(--space));
+    --_xl-pr: var(--xl-pr, var(--xl-px, var(--xl-p, var(--_lg-pr))));
+    padding-right: calc(var(--_xl-pr) * var(--space));
+    --_xl-pb: var(--xl-pb, var(--xl-py, var(--xl-p, var(--_lg-pb))));
+    padding-bottom: calc(var(--_xl-pb) * var(--space));
+    --_xl-pl: var(--xl-pl, var(--xl-px, var(--xl-p, var(--_lg-pl))));
+    padding-left: calc(var(--_xl-pl) * var(--space));
+  }
+}
+
+.application {
+  --pb: 2;
+  --lg-pb: 8;
+  background-color: aqua;
 }

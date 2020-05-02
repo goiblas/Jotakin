@@ -1,0 +1,82 @@
+@mixin in-breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media ( min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+$directions: (
+  top: "t",
+  right: "r",
+  bottom: "b",
+  left: "l"
+);
+
+@each $breakpoint-label, $breakpoints-class in $responsive-variants {
+  @include in-breakpoint($breakpoint-label) {
+    @each $space-name, $space-value in $spaces {
+      @each $direction, $abbr in $directions {
+        .#{$breakpoints-class}p#{$abbr}-#{$space-name} {
+          padding-#{$direction}: $space-value;
+        }
+
+        .#{$breakpoints-class}m#{$abbr}-#{$space-name} {
+          margin-#{$direction}: $space-value;
+        }
+      }
+
+      //paddings
+      .#{$breakpoints-class}p-#{$space-name} {
+        padding: $space-value;
+      }
+
+      .#{$breakpoints-class}px-#{$space-name} {
+        padding-left: $space-value;
+        padding-right: $space-value;
+      }
+
+      .#{$breakpoints-class}py-#{$space-name} {
+        padding-top: $space-value;
+        padding-bottom: $space-value;
+      }
+
+      //margins
+      .#{$breakpoints-class}m-#{$space-name} {
+        margin: $space-value;
+      }
+      .#{$breakpoints-class}mx-#{$space-name} {
+        margin-left: $space-value;
+        margin-right: $space-value;
+      }
+
+      .#{$breakpoints-class}my-#{$space-name} {
+        margin-top: $space-value;
+        margin-bottom: $space-value;
+      }
+    }
+
+    // margins auto
+    @each $direction, $abbr in $directions {
+      .#{$breakpoints-class}m#{$abbr}-auto {
+        margin-#{$direction}: auto;
+      }
+    }
+
+    .#{$breakpoints-class}mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .#{$breakpoints-class}my-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .#{$breakpoints-class}m-auto {
+      margin: auto;
+    }
+  }
+}
