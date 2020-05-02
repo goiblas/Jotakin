@@ -1,0 +1,99 @@
+:root {
+  --base: 14px;
+  --scale-factor: 0.28;
+  --rhythm: 24px;
+
+  --font-family-title: "Lusitana", serif;
+  --font-family: "Hind", sans-serif;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --base: calc(10px + 0.52vw);
+    --rhythm: calc(19px + 1vw);
+    --scale-factor: 0.48;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --base: 18px;
+    --rhythm: 32px;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  background-image: repeating-linear-gradient(
+    rgb(255, 255, 255) 0,
+    rgb(255, 255, 255) calc(var(--rhythm) - 1px),
+    rgba(62, 150, 255, 0.23) var(--rhythm)
+  );
+}
+
+* {
+  font-size: calc(
+    var(--base) + (var(--base) * var(--scale-factor) * var(--font-increase, 0))
+  );
+  line-height: calc(
+    var(--rhythm) + (var(--rhythm) * var(--rhythm-increase, 0))
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-size: calc(
+    var(--base) + (var(--base) * var(--scale-factor) * var(--font-increase, 0))
+  );
+  line-height: calc(
+    var(--rhythm) + (var(--rhythm) * var(--rhythm-increase, 0))
+  );
+  margin: calc(var(--rhythm) * 2) 0 var(--rhythm);
+  font-weight: 400;
+}
+
+.content * + * {
+  margin-top: var(--rhythm);
+}
+
+h1 {
+  --font-increase: 5;
+  --rhythm-increase: 1;
+  margin: var(--rhythm) 0;
+}
+h2 {
+  --font-increase: 4;
+  --rhythm-increase: 1;
+}
+h3 {
+  --font-increase: 3;
+  --rhythm-increase: 1;
+}
+
+h4 {
+  --font-increase: 2;
+  --rhythm-increase: 0.5;
+}
+
+h5 {
+  --font-increase: 1;
+}
+
+.var\:font-increase-2 {
+  --font-increase: 2;
+}
+
+.text-small {
+  --font-increase: 2;
+  top: 100%;
+  position: relative;
+  padding-top: calc(var(--rhythm) - 5px);
+  border-top: 5px solid #ccc;
+}
