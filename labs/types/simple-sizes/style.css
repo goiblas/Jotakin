@@ -1,0 +1,83 @@
+:root {
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+
+  /* https://www.modularscale.com/?1&rem&1.1 */
+  --text-xs: 0.751rem;
+  --text-sm: 0.826rem;
+  --text-base: 0.909rem;
+  --text-lg: 1.1rem;
+  --text-xl: 1.21rem;
+  --text-2xl: 1.331rem;
+  --text-3xl: 1.611rem;
+  --text-4xl: 1.772rem;
+  --text-5xl: 1.949rem;
+  --text-6xl: 2.144rem;
+
+  --line-height-xs: 1.2;
+  --line-height-sm: 1.4;
+  --line-height-base: 1.6;
+  --line-height-lg: 1.8;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-xs: 0.756rem;
+    --text-sm: 0.87rem;
+    --text-base: 1rem;
+    --text-lg: 1.15rem;
+    --text-xl: 1.322rem;
+    --text-2xl: 1.749rem;
+    --text-3xl: 2.011rem;
+    --text-4xl: 2.313rem;
+    --text-5xl: 2.66rem;
+    --text-6xl: 3.059rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --text-lg: 1.24rem;
+    --text-xl: 1.538rem;
+    --text-2xl: 1.907rem;
+    --text-3xl: 2.364rem;
+    --text-4xl: 2.932rem;
+    --text-5xl: 3.635rem;
+    --text-6xl: 4.508rem;
+  }
+}
+
+body {
+  line-height: var(--line-height-base);
+  font-size: var(--text-base);
+}
+.text-small {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-lg);
+}
+h1 {
+  font-size: var(--text-5xl);
+  line-height: var(--line-height-xs);
+}
+h2 {
+  font-size: var(--text-4xl);
+  line-height: var(--line-height-sm);
+}
+h3 {
+  font-size: var(--text-3xl);
+  line-height: var(--line-height-sm);
+}
+h4 {
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-sm);
+}
+h5 {
+  font-size: var(--text-xl);
+  line-height: var(--line-height-sm);
+}
+h6 {
+  font-size: var(--text-lg);
+}
