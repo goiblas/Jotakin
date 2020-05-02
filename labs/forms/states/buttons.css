@@ -1,0 +1,74 @@
+:root {
+  --button-height: var(--control-height);
+  --button-line-height: 22;
+  --button-border-width: 1;
+  --button-padding: 16px;
+  --button-border-color: var(--color-contrast-200);
+  --button-bg: var(--color-contrast-100);
+  --button-color: var(--color-contrast-900);
+  --button-shadow: none;
+  --button-radius: var(--control-radius);
+  --button-font-size: inherit;
+  --button-outline: 0;
+  --button-transition: background-color var(--transition-duration);
+
+  /* Focus */
+  /* --button-bg--focus: inherit;
+  --button-color--focus: inherit;
+  --button-outline--focus: inherit; */
+  /* --button-border-color--focus: inherit; */
+  --button-bg--focus: var(--color-contrast-200);
+  /* --button-shadow--focus: inherit; */
+
+  /* Disable */
+  --button-bg--disabled: var(--color-contrast-100);
+  --button-color--disabled: var(--color-contrast-400);
+  /* --button-outline--disabled: inherit; 
+  --button-border-color--disabled: inherit;
+  --button-shadow--disabled: inherit; */
+}
+
+.button {
+  line-height: calc(var(--button-height) * 1px);
+  padding: 0 var(--button-padding);
+  border-radius: var(--control-radius);
+  background-color: var(--button-bg);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  border: calc(var(--button-border-width) * 1px) solid
+    var(--button-border-color);
+  box-shadow: var(--button-shadow);
+  border-radius: var(--button-radius);
+  transition: var(--button-transition);
+}
+.button:focus {
+  color: var(--button-color--focus, var(--button-color));
+  background-color: var(--button-bg--focus, var(--button-bg));
+  border-color: var(--button-border-color--focus, var(--button-border-color));
+  box-shadow: var(--button-shadow--focus, var(--button-shadow));
+  outline: var(--button-outline--focus, var(--button-outline));
+}
+
+.button--primary {
+  --button-bg: var(--color-primary-700);
+  --button-color: var(--color-white);
+  --button-border-width: 0;
+}
+.button--primary:focus {
+  --button-bg--focus: var(--color-primary-800);
+}
+
+/* sizes */
+.button--large {
+  --button-height: var(--control-height-large);
+  /* maybe get line-height calc with font size & line-height */
+  --button-font-size: 1.2rem;
+  --button-padding: 1.2rem;
+}
+
+.button--small {
+  --button-height: var(--control-height-small);
+  --button-line-height: 18;
+  --button-font-size: 0.8rem;
+}

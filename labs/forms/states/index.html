@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <html lang="en" data-theme="dark"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../base.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="forms.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <style>
+      body {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+      div {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forms</h1>
+      <form>
+        <div>
+          <label for="name">Text Input:</label>
+          <input class="form-control" type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="select">Select:</label>
+          <select class="form-control" id="select">
+            <option value="option">Option</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="textarea">Textarea:</label>
+          <textarea
+            class="form-control"
+            name="textarea"
+            id="textarea"
+          ></textarea>
+        </div>
+        <div>
+          <label for="name-disabled">Text Input Disabled:</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name-disabled"
+            id="name-disabled"
+            value="Form control disabled"
+            disabled
+          />
+        </div>
+
+        <hr />
+        <h2>Sizes</h2>
+        <div>
+          <input
+            class="form-control form-control--large"
+            type="text"
+            name="name"
+            id="name"
+            value="Large"
+          />
+        </div>
+        <div>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            value="Normal"
+          />
+        </div>
+        <div>
+          <input
+            class="form-control form-control--small"
+            type="text"
+            name="name"
+            id="name"
+            value="Small"
+          />
+        </div>
+
+        <hr />
+        <h2>Groups</h2>
+        <div>
+          <label for="name">Text Input:</label>
+          <div class="form-group" style="display: flex">
+            <input class="form-control" type="text" name="name" id="name" />
+            <button class="button">button</button>
+          </div>
+        </div>
+
+        <hr />
+        <button class="button button--primary button--large">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

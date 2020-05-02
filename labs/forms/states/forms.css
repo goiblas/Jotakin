@@ -1,0 +1,136 @@
+:root {
+  --form-control-height: var(--control-height);
+  --form-control-line-height: 22;
+  --form-control-border-width: 1;
+  --form-control-padding: 8px;
+  --form-control-border-color: var(--color-contrast-200);
+  --form-control-bg: var(--color-contrast-000);
+  --form-control-color: var(--color-contrast-900);
+  --form-control-shadow: var(--color-primary-600) 0 0 0 0;
+  --form-control-radius: var(--control-radius);
+  --form-control-font-size: inherit;
+  --form-control-outline: 0;
+  --form-control-transition: border-color var(--transition-duration),
+    box-shadow var(--transition-duration);
+  --form-control-placeholder-color: var(--color-contrast-200);
+
+  /* Focus */
+  /* --form-control-bg--focus: inherit;
+  --form-control-color--focus: inherit;
+  --form-control-outline--focus: inherit; */
+  --form-control-border-color--focus: var(--color-primary-600);
+  --form-control-shadow--focus: var(--color-primary-600) 0 0 0 1px;
+
+  /* Disable */
+  --form-control-bg--disabled: var(--color-contrast-100);
+  --form-control-color--disabled: var(--color-contrast-400);
+  /* --form-control-outline--disabled: inherit; 
+  --form-control-border-color--disabled: inherit;
+  --form-control-shadow--disabled: inherit; */
+
+  /* Invalid */
+  --form-control-bg--error: var(--color-error-100);
+  /* --form-control-color--error: inherit;
+  --form-control-outline--error: inherit; */
+  --form-control-border-color--error: var(--color-error-600);
+  /* --form-control-shadow--error: inherit; */
+}
+
+/* Component form control */
+.form-control {
+  display: block;
+  width: 100%;
+  appearance: none;
+  font-size: var(--form-control-font-size);
+  line-height: calc(var(--form-control-line-height) * 1px);
+  padding: calc(
+      (
+          (var(--form-control-height) - var(--form-control-line-height)) / 2 -
+            var(--form-control-border-width)
+        ) * 1px
+    )
+    var(--form-control-padding);
+  color: var(--form-control-color);
+  background-color: var(--form-control-bg);
+  border: calc(var(--form-control-border-width) * 1px) solid
+    var(--form-control-border-color);
+  box-shadow: var(--form-control-shadow);
+  border-radius: var(--form-control-radius);
+  transition: var(--form-control-transition);
+}
+textarea.form-control {
+  min-height: 100px;
+}
+select.form-control:not([size]):not([multiple]) {
+  appearance: none;
+  height: calc(var(--form-control-height) * 1px);
+}
+select.form-control::-ms-expand {
+  display: none;
+}
+::placeholder {
+  color: var(--form-control-placeholder-color);
+}
+
+/* focus */
+.form-control:focus {
+  color: var(--form-control-color--focus, var(--form-control-color));
+  background-color: var(--form-control-bg--focus, var(--form-control-bg));
+  border-color: var(
+    --form-control-border-color--focus,
+    var(--form-control-border-color)
+  );
+  box-shadow: var(--form-control-shadow--focus, var(--form-control-shadow));
+  outline: var(--form-control-outline--focus, var(--form-control-outline));
+}
+/* :disabled */
+.form-control:disabled {
+  color: var(--form-control-color--disabled, var(--form-control-color));
+  background-color: var(--form-control-bg--disabled, var(--form-control-bg));
+  border-color: var(
+    --form-control-border-color--disabled,
+    var(--form-control-border-color)
+  );
+  box-shadow: var(--form-control-shadow--disabled, var(--form-control-shadow));
+  outline: var(--form-control-outline--disabled, var(--form-control-outline));
+  cursor: not-allowed;
+}
+
+/* sizes */
+.form-control--large {
+  --form-control-height: var(--control-height-large);
+  /* maybe get line-height calc with font size & line-height */
+  --form-control-line-height: calc(1.4 * 18);
+  --form-control-font-size: 1.2rem;
+}
+
+.form-control--small {
+  --form-control-height: var(--control-height-small);
+  --form-control-line-height: 18;
+  --form-control-font-size: 0.8rem;
+}
+
+/* status */
+.form-control:invalid {
+  color: var(--form-control-color--error, var(--form-control-color));
+  background-color: var(--form-control-bg--error, var(--form-control-bg));
+  border-color: var(
+    --form-control-border-color--error,
+    var(--form-control-border-color)
+  );
+  box-shadow: var(--form-control-shadow--error, var(--form-control-shadow));
+  outline: var(--form-control-outline--error, var(--form-control-outline));
+}
+
+/* components form group */
+.form-group {
+  display: flex;
+}
+.form-group .form-control {
+  flex: 1;
+  border-right: 0;
+  border-radius: var(--form-control-radius) 0 0 var(--form-control-radius);
+}
+.form-group button {
+  border-radius: 0 var(--form-control-radius) var(--form-control-radius) 0;
+}

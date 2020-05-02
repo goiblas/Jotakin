@@ -1,0 +1,14 @@
+:root {
+  /* example: use this anotation for declare that sould be a number */
+  /* --control-height\.value: 40; */
+  --control-height: 40;
+  --control-height-large: 48;
+  --control-height-small: 32;
+  --control-radius: 4px;
+  --transition-duration: 0.3s;
+}
+@media (min-width: 600px) {
+  :root {
+    --control-height-large: 56;
+  }
+}

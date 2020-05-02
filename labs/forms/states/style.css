@@ -1,0 +1,90 @@
+/* Color system */
+/* https://github.com/primer/css/blob/master/src/support/variables/color-system.scss */
+:root {
+  /* colors */
+  --color-primary-100: #f4fdce;
+  --color-primary-200: #e7fc9f;
+  --color-primary-300: #d3f76e;
+  --color-primary-400: #beef49;
+  --color-primary-500: #9fe512;
+  --color-primary-600: #81c40d;
+  --color-primary-700: #66a409;
+  --color-primary-800: #4d8405;
+  --color-primary-900: #3c6d03;
+
+  --color-secondary-100: #fddbd2;
+  --color-secondary-200: #fbafa7;
+  --color-secondary-300: #f57a79;
+  --color-secondary-400: #ec5765;
+  --color-secondary-500: #e02447;
+  --color-secondary-600: #c01a49;
+  --color-secondary-700: #a11247;
+  --color-secondary-800: #810b43;
+  --color-secondary-900: #6b063f;
+
+  --color-error-100: #ffdce0;
+  --color-error-200: #fdaeb7;
+  --color-error-300: #f97583;
+  --color-error-400: #ea4a5a;
+  --color-error-500: #d73a49;
+  --color-error-600: #cb2431;
+  --color-error-700: #b31d28;
+  --color-error-800: #9e1c23;
+  --color-error-900: #86181d;
+
+  /* https://gka.github.io/palettes/#/11|s|1c1c21,ffffff|ffffe0,ff005e,93003a|1|1 */
+  --color-neutral-100: #e2e2e3;
+  --color-neutral-200: #c7c6c8;
+  --color-neutral-300: #ababae;
+  --color-neutral-400: #919194;
+  --color-neutral-500: #77777b;
+  --color-neutral-600: #5f5f63;
+  --color-neutral-700: #47474c;
+  --color-neutral-800: #313136;
+  --color-neutral-900: #1c1c21;
+
+  --color-black: #1c1c21;
+  --color-white: #ffffff;
+}
+
+/* theme */
+:root {
+  --color-contrast-000: var(--color-white);
+  --color-contrast-100: var(--color-neutral-100);
+  --color-contrast-200: var(--color-neutral-200);
+  --color-contrast-300: var(--color-neutral-300);
+  --color-contrast-400: var(--color-neutral-400);
+  --color-contrast-500: var(--color-neutral-500);
+  --color-contrast-600: var(--color-neutral-600);
+  --color-contrast-700: var(--color-neutral-700);
+  --color-contrast-800: var(--color-neutral-800);
+  --color-contrast-900: var(--color-neutral-900);
+}
+
+[data-theme="dark"] {
+  --color-contrast-000: var(--color-black);
+  --color-contrast-100: var(--color-neutral-800);
+  --color-contrast-200: var(--color-neutral-700);
+  --color-contrast-300: var(--color-neutral-600);
+  --color-contrast-400: var(--color-neutral-500);
+  --color-contrast-500: var(--color-neutral-400);
+  --color-contrast-600: var(--color-neutral-300);
+  --color-contrast-700: var(--color-neutral-200);
+  --color-contrast-800: var(--color-neutral-100);
+  --color-contrast-900: var(--color-white);
+}
+
+body {
+  background-color: var(--color-contrast-000);
+  color: var(--color-contrast-900);
+}
+
+label {
+  font-size: 0.8rem;
+  color: var(--color-contrast-400);
+}
+hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-contrast-100);
+}
