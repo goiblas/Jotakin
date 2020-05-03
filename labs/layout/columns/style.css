@@ -1,0 +1,246 @@
+:root {
+  --grid-columns: 12;
+
+  --grid-gap-columns: 1rem;
+  --grid-gap-columns-sm: 0.5rem;
+  --grid-gap-columns-lg: 2rem;
+
+  --grid-gap-row: 1rem;
+  --grid-gap-row-sm: 0.5rem;
+  --grid-gap-row-lg: 2rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --grid-gap-columns: 2rem;
+    --grid-gap-columns-sm: 0.75rem;
+    --grid-gap-columns-lg: 4rem;
+
+    --grid-gap-row: 2rem;
+    --grid-gap-row-sm: 0.75rem;
+    --grid-gap-row-lg: 4rem;
+  }
+}
+
+/* Grid */
+.grid {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+.grid > * {
+  grid-column-end: span var(--grid-columns);
+}
+
+/* columns */
+.cols-1 {
+  grid-column-end: span 1;
+}
+.cols-2 {
+  grid-column-end: span 2;
+}
+.cols-3 {
+  grid-column-end: span 3;
+}
+.cols-4 {
+  grid-column-end: span 4;
+}
+.cols-5 {
+  grid-column-end: span 5;
+}
+.cols-6 {
+  grid-column-end: span 6;
+}
+.cols-7 {
+  grid-column-end: span 7;
+}
+.cols-8 {
+  grid-column-end: span 8;
+}
+.cols-9 {
+  grid-column-end: span 9;
+}
+.cols-10 {
+  grid-column-end: span 10;
+}
+.cols-11 {
+  grid-column-end: span 11;
+}
+.cols-12 {
+  grid-column-end: span 12;
+}
+
+@media (min-width: 544px) {
+  .sm\:cols-1 {
+    grid-column-end: span 1;
+  }
+  .sm\:cols-2 {
+    grid-column-end: span 2;
+  }
+  .sm\:cols-3 {
+    grid-column-end: span 3;
+  }
+  .sm\:cols-4 {
+    grid-column-end: span 4;
+  }
+  .sm\:cols-5 {
+    grid-column-end: span 5;
+  }
+  .sm\:cols-6 {
+    grid-column-end: span 6;
+  }
+  .sm\:cols-7 {
+    grid-column-end: span 7;
+  }
+  .sm\:cols-8 {
+    grid-column-end: span 8;
+  }
+  .sm\:cols-9 {
+    grid-column-end: span 9;
+  }
+  .sm\:cols-10 {
+    grid-column-end: span 10;
+  }
+  .sm\:cols-11 {
+    grid-column-end: span 11;
+  }
+  .sm\:cols-12 {
+    grid-column-end: span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:cols-1 {
+    grid-column-end: span 1;
+  }
+  .md\:cols-2 {
+    grid-column-end: span 2;
+  }
+  .md\:cols-3 {
+    grid-column-end: span 3;
+  }
+  .md\:cols-4 {
+    grid-column-end: span 4;
+  }
+  .md\:cols-5 {
+    grid-column-end: span 5;
+  }
+  .md\:cols-6 {
+    grid-column-end: span 6;
+  }
+  .md\:cols-7 {
+    grid-column-end: span 7;
+  }
+  .md\:cols-8 {
+    grid-column-end: span 8;
+  }
+  .md\:cols-9 {
+    grid-column-end: span 9;
+  }
+  .md\:cols-10 {
+    grid-column-end: span 10;
+  }
+  .md\:cols-11 {
+    grid-column-end: span 11;
+  }
+  .md\:cols-12 {
+    grid-column-end: span 12;
+  }
+}
+@media (min-width: 1012px) {
+  .lg\:cols-1 {
+    grid-column-end: span 1;
+  }
+  .lg\:cols-2 {
+    grid-column-end: span 2;
+  }
+  .lg\:cols-3 {
+    grid-column-end: span 3;
+  }
+  .lg\:cols-4 {
+    grid-column-end: span 4;
+  }
+  .lg\:cols-5 {
+    grid-column-end: span 5;
+  }
+  .lg\:cols-6 {
+    grid-column-end: span 6;
+  }
+  .lg\:cols-7 {
+    grid-column-end: span 7;
+  }
+  .lg\:cols-8 {
+    grid-column-end: span 8;
+  }
+  .lg\:cols-9 {
+    grid-column-end: span 9;
+  }
+  .lg\:cols-10 {
+    grid-column-end: span 10;
+  }
+  .lg\:cols-11 {
+    grid-column-end: span 11;
+  }
+  .lg\:cols-12 {
+    grid-column-end: span 12;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:cols-1 {
+    grid-column-end: span 1;
+  }
+  .xl\:cols-2 {
+    grid-column-end: span 2;
+  }
+  .xl\:cols-3 {
+    grid-column-end: span 3;
+  }
+  .xl\:cols-4 {
+    grid-column-end: span 4;
+  }
+  .xl\:cols-5 {
+    grid-column-end: span 5;
+  }
+  .xl\:cols-6 {
+    grid-column-end: span 6;
+  }
+  .xl\:cols-7 {
+    grid-column-end: span 7;
+  }
+  .xl\:cols-8 {
+    grid-column-end: span 8;
+  }
+  .xl\:cols-9 {
+    grid-column-end: span 9;
+  }
+  .xl\:cols-10 {
+    grid-column-end: span 10;
+  }
+  .xl\:cols-11 {
+    grid-column-end: span 11;
+  }
+  .xl\:cols-12 {
+    grid-column-end: span 12;
+  }
+}
+
+/* gaps */
+.grid-gap {
+  grid-row-gap: var(--grid-gap-row);
+  margin-left: calc(var(--grid-gap-columns) * -1);
+}
+.grid-gap > * {
+  margin-left: var(--grid-gap-columns);
+}
+.grid-gap-sm {
+  grid-row-gap: var(--grid-gap-row-sm);
+}
+.grid-gap-sm > {
+  margin-left: var(--grid-gap-columns-sm);
+}
+.grid-gap-lg {
+  grid-row-gap: var(--grid-gap-row-lg);
+}
+.grid-gap-lg > * + * {
+  margin-left: var(--grid-gap-columns-lg);
+}

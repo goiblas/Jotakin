@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../base.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .box {
+        line-height: 4.2rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: #0180ae;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="box cols-10 md:cols-8 xl:cols-7">
+          cols:10 cols-md:8 cols-xl:9
+        </div>
+        <div class="box md:cols-4 xl:cols-5">
+          cols:12 cols-md:4 cols-xl:3
+        </div>
+      </div>
+      <div class="grid grid-gap">
+        <div class="box cols-6 md:cols-4">cols:6 cols-md:4</div>
+        <div class="box cols-6 md:cols-4">cols:6 cols-md:4</div>
+        <div class="box cols-6 md:cols-4">cols:6 cols-md:4</div>
+      </div>
+      <div class="grid grid-gap-lg">
+        <div class="box cols-6">cols:6</div>
+        <div class="box cols-6">cols:6</div>
+      </div>
+    </div>
+  </body>
+</html>
