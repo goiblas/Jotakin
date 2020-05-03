@@ -1,0 +1,61 @@
+[class*="space-between-"] {
+  --space-value: 8;
+  --space-1: calc(var(--space-value) * 1px);
+  --space-2: calc(var(--space-value) * 2px);
+  --space-3: calc(var(--space-value) * 3px);
+  --space-4: calc(var(--space-value) * 4px);
+  --space-5: calc(var(--space-value) * 5px);
+  --space-6: calc(var(--space-value) * 6px);
+}
+
+.space-between-0 > * + * {
+  margin-left: 0;
+}
+.space-between-1 > * + * {
+  margin-left: var(--space-1);
+}
+.space-between-2 > * + * {
+  margin-left: var(--space-2);
+}
+.space-between-3 > * + * {
+  margin-left: var(--space-3);
+}
+.space-between-4 > * + * {
+  margin-left: var(--space-4);
+}
+.space-between-5 > * + * {
+  margin-left: var(--space-5);
+}
+.space-between-6 > * + * {
+  margin-left: var(--space-6);
+}
+
+@media not all and (min-width: 768px) {
+  .md\:has-space-between {
+    /* margin-left: 0; */
+    --space-value: 0;
+  }
+}
+@media not all and (min-width: 1012px) {
+  .lg\:has-space-between {
+    --space-value: 0;
+  }
+}
+@media not all and (min-width: 1280px) {
+  .xl\:has-space-between {
+    --space-value: 0;
+  }
+}
+
+/* decoration  */
+.flex {
+  display: flex;
+  padding: 20px;
+  background-color: beige;
+}
+.box {
+  --size: 4rem;
+  background-color: brown;
+  width: var(--size);
+  height: var(--size);
+}
