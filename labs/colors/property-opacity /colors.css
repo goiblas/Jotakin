@@ -1,0 +1,193 @@
+:root {
+  /* Opacities */
+  --opacity-1: 0.08;
+  --opacity-2: 0.15;
+  --opacity-3: 0.22;
+  --opacity-4: 0.29;
+  --opacity-5: 0.5;
+  --opacity-6: 0.56;
+  --opacity-7: 0.68;
+  --opacity-8: 0.82;
+  --opacity-9: 0.98;
+
+  /* hsl conversor: https://convertacolor.com/ */
+  --color-contrast-hsl-100: 240, 1.8%, 88.8%;
+  --color-contrast-hsl-200: 270, 1.8%, 78%;
+  --color-contrast-hsl-300: 240, 1.8%, 67.6%;
+  --color-contrast-hsl-400: 240, 1.4%, 57.5%;
+  --color-contrast-hsl-500: 240, 1.7%, 47.5%;
+  --color-contrast-hsl-600: 240, 2.1%, 38%;
+  --color-contrast-hsl-700: 240, 3.4%, 28.8%;
+  --color-contrast-hsl-800: 240, 4.9%, 20.2%;
+  --color-contrast-hsl-900: 240, 8.2%, 12%;
+}
+/* backgrounds */
+.bg-contrast-1 {
+  background-color: hsla(var(--color-contrast-hsl-100), var(--bg-opacity, 1));
+}
+.bg-contrast-2 {
+  background-color: hsla(var(--color-contrast-hsl-200), var(--bg-opacity, 1));
+}
+.bg-contrast-3 {
+  background-color: hsla(var(--color-contrast-hsl-300), var(--bg-opacity, 1));
+}
+.bg-contrast-4 {
+  background-color: hsla(var(--color-contrast-hsl-400), var(--bg-opacity, 1));
+}
+.bg-contrast-5 {
+  background-color: hsla(var(--color-contrast-hsl-500), var(--bg-opacity, 1));
+}
+.bg-contrast-6 {
+  background-color: hsla(var(--color-contrast-hsl-600), var(--bg-opacity, 1));
+}
+.bg-contrast-7 {
+  background-color: hsla(var(--color-contrast-hsl-700), var(--bg-opacity, 1));
+}
+.bg-contrast-8 {
+  background-color: hsla(var(--color-contrast-hsl-800), var(--bg-opacity, 1));
+}
+.bg-contrast-9 {
+  background-color: hsla(var(--color-contrast-hsl-900), var(--bg-opacity, 1));
+}
+
+.bg-opacity-1 {
+  --bg-opacity: var(--opacity-1);
+}
+.bg-opacity-2 {
+  --bg-opacity: var(--opacity-2);
+}
+.bg-opacity-3 {
+  --bg-opacity: var(--opacity-3);
+}
+.bg-opacity-4 {
+  --bg-opacity: var(--opacity-4);
+}
+.bg-opacity-5 {
+  --bg-opacity: var(--opacity-5);
+}
+.bg-opacity-6 {
+  --bg-opacity: var(--opacity-6);
+}
+.bg-opacity-7 {
+  --bg-opacity: var(--opacity-7);
+}
+.bg-opacity-8 {
+  --bg-opacity: var(--opacity-8);
+}
+.bg-opacity-9 {
+  --bg-opacity: var(--opacity-9);
+}
+
+/* Colors */
+.color-contrast-1 {
+  color: hsla(var(--color-contrast-hsl-100), var(--color-opacity, 1));
+}
+.color-contrast-2 {
+  color: hsla(var(--color-contrast-hsl-200), var(--color-opacity, 1));
+}
+.color-contrast-3 {
+  color: hsla(var(--color-contrast-hsl-300), var(--color-opacity, 1));
+}
+.color-contrast-4 {
+  color: hsla(var(--color-contrast-hsl-400), var(--color-opacity, 1));
+}
+.color-contrast-5 {
+  color: hsla(var(--color-contrast-hsl-500), var(--color-opacity, 1));
+}
+.color-contrast-6 {
+  color: hsla(var(--color-contrast-hsl-600), var(--color-opacity, 1));
+}
+.color-contrast-7 {
+  color: hsla(var(--color-contrast-hsl-700), var(--color-opacity, 1));
+}
+.color-contrast-8 {
+  color: hsla(var(--color-contrast-hsl-800), var(--color-opacity, 1));
+}
+.color-contrast-9 {
+  color: hsla(var(--color-contrast-hsl-900), var(--color-opacity, 1));
+}
+
+.color-opacity-1 {
+  --color-opacity: var(--opacity-1);
+}
+.color-opacity-2 {
+  --color-opacity: var(--opacity-2);
+}
+.color-opacity-3 {
+  --color-opacity: var(--opacity-3);
+}
+.color-opacity-4 {
+  --color-opacity: var(--opacity-4);
+}
+.color-opacity-5 {
+  --color-opacity: var(--opacity-5);
+}
+.color-opacity-6 {
+  --color-opacity: var(--opacity-6);
+}
+.color-opacity-7 {
+  --color-opacity: var(--opacity-7);
+}
+.color-opacity-8 {
+  --color-opacity: var(--opacity-8);
+}
+.color-opacity-9 {
+  --color-opacity: var(--opacity-9);
+}
+
+/* Border */
+.border-contrast-1 {
+  border-color: hsla(var(--color-contrast-hsl-100), var(--border-opacity, 1));
+}
+.border-contrast-2 {
+  border-color: hsla(var(--color-contrast-hsl-200), var(--border-opacity, 1));
+}
+.border-contrast-3 {
+  border-color: hsla(var(--color-contrast-hsl-300), var(--border-opacity, 1));
+}
+.border-contrast-4 {
+  border-color: hsla(var(--color-contrast-hsl-400), var(--border-opacity, 1));
+}
+.border-contrast-5 {
+  border-color: hsla(var(--color-contrast-hsl-500), var(--border-opacity, 1));
+}
+.border-contrast-6 {
+  border-color: hsla(var(--color-contrast-hsl-600), var(--border-opacity, 1));
+}
+.border-contrast-7 {
+  border-color: hsla(var(--color-contrast-hsl-700), var(--border-opacity, 1));
+}
+.border-contrast-8 {
+  border-color: hsla(var(--color-contrast-hsl-800), var(--border-opacity, 1));
+}
+.border-contrast-9 {
+  border-color: hsla(var(--color-contrast-hsl-900), var(--border-opacity, 1));
+}
+
+.border-opacity-1 {
+  --border-opacity: var(--opacity-1);
+}
+.border-opacity-2 {
+  --border-opacity: var(--opacity-2);
+}
+.border-opacity-3 {
+  --border-opacity: var(--opacity-3);
+}
+.border-opacity-4 {
+  --border-opacity: var(--opacity-4);
+}
+.border-opacity-5 {
+  --border-opacity: var(--opacity-5);
+}
+.border-opacity-6 {
+  --border-opacity: var(--opacity-6);
+}
+.border-opacity-7 {
+  --border-opacity: var(--opacity-7);
+}
+.border-opacity-8 {
+  --border-opacity: var(--opacity-8);
+}
+.border-opacity-9 {
+  --border-opacity: var(--opacity-9);
+}
