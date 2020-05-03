@@ -1,0 +1,116 @@
+[class*="space-between-"] {
+  --space-value: 8;
+  --space-1: calc(var(--space-value) * 1px);
+  --space-2: calc(var(--space-value) * 2px);
+  --space-3: calc(var(--space-value) * 3px);
+  --space-4: calc(var(--space-value) * 4px);
+  --space-5: calc(var(--space-value) * 5px);
+  --space-6: calc(var(--space-value) * 6px);
+}
+
+.space-between-0 > * + * {
+  margin-left: 0;
+}
+.space-between-1 > * + * {
+  margin-left: var(--space-1);
+}
+.space-between-2 > * + * {
+  margin-left: var(--space-2);
+}
+.space-between-3 > * + * {
+  margin-left: var(--space-3);
+}
+.space-between-4 > * + * {
+  margin-left: var(--space-4);
+}
+.space-between-5 > * + * {
+  margin-left: var(--space-5);
+}
+.space-between-6 > * + * {
+  margin-left: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .md-space-between-0 > * + * {
+    margin-left: 0;
+  }
+  .md-space-between-1 > * + * {
+    margin-left: var(--space-1);
+  }
+  .md-space-between-2 > * + * {
+    margin-left: var(--space-2);
+  }
+  .md-space-between-3 > * + * {
+    margin-left: var(--space-3);
+  }
+  .md-space-between-4 > * + * {
+    margin-left: var(--space-4);
+  }
+  .md-space-between-5 > * + * {
+    margin-left: var(--space-5);
+  }
+  .md-space-between-6 > * + * {
+    margin-left: var(--space-6);
+  }
+}
+
+@media (min-width: 1012px) {
+  .lg-space-between-0 > * + * {
+    margin-left: 0;
+  }
+  .lg-space-between-1 > * + * {
+    margin-left: var(--space-1);
+  }
+  .lg-space-between-2 > * + * {
+    margin-left: var(--space-2);
+  }
+  .lg-space-between-3 > * + * {
+    margin-left: var(--space-3);
+  }
+  .lg-space-between-4 > * + * {
+    margin-left: var(--space-4);
+  }
+  .lg-space-between-5 > * + * {
+    margin-left: var(--space-5);
+  }
+  .lg-space-between-6 > * + * {
+    margin-left: var(--space-6);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl-space-between-0 > * + * {
+    margin-left: 0;
+  }
+  .xl-space-between-1 > * + * {
+    margin-left: var(--space-1);
+  }
+  .xl-space-between-2 > * + * {
+    margin-left: var(--space-2);
+  }
+  .xl-space-between-3 > * + * {
+    margin-left: var(--space-3);
+  }
+  .xl-space-between-4 > * + * {
+    margin-left: var(--space-4);
+  }
+  .xl-space-between-5 > * + * {
+    margin-left: var(--space-5);
+  }
+  .xl-space-between-6 > * + * {
+    margin-left: var(--space-6);
+  }
+}
+
+/* decoration  */
+.flex {
+  display: flex;
+  padding: 20px;
+  background-color: beige;
+}
+.box {
+  --size: 4rem;
+  background-color: brown;
+  width: var(--size);
+  height: var(--size);
+}
