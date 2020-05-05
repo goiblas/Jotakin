@@ -241,6 +241,6 @@
 .grid-gap-lg {
   grid-row-gap: var(--grid-gap-row-lg);
 }
-.grid-gap-lg > * + * {
+.grid-gap-lg > * {
   margin-left: var(--grid-gap-columns-lg);
 }
