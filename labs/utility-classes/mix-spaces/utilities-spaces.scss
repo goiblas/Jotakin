@@ -1,0 +1,108 @@
+$spaces: (0 1 2 3 4 5);
+
+// Breakpoint
+// --------------------------------------
+$width-xs: 0;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+
+$breakpoints: (
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl
+);
+
+$responsive-variants: (
+  "": "",
+  sm: "sm-",
+  md: "md-",
+  lg: "lg-",
+  xl: "xl-"
+);
+
+@mixin in-breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media ( min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+$directions: (
+  top: "t",
+  right: "r",
+  bottom: "b",
+  left: "l"
+);
+
+@each $breakpoint-label, $breakpoints-class in $responsive-variants {
+  @include in-breakpoint($breakpoint-label) {
+    @each $space in $spaces {
+      $value: var(--#{$breakpoints-class}space-#{$space});
+      @each $direction, $abbr in $directions {
+        .#{$breakpoints-class}p#{$abbr}-#{$space} {
+          padding-#{$direction}: $value;
+        }
+
+        .#{$breakpoints-class}m#{$abbr}-#{$space} {
+          margin-#{$direction}: $value;
+        }
+      }
+
+      //paddings
+      .#{$breakpoints-class}p-#{$space} {
+        padding: $value;
+      }
+
+      .#{$breakpoints-class}px-#{$space} {
+        padding-left: $value;
+        padding-right: $value;
+      }
+
+      .#{$breakpoints-class}py-#{$space} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+
+      //margins
+      .#{$breakpoints-class}m-#{$space} {
+        margin: $value;
+      }
+      .#{$breakpoints-class}mx-#{$space} {
+        margin-left: $value;
+        margin-right: $value;
+      }
+
+      .#{$breakpoints-class}my-#{$space} {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
+    }
+
+    // margins auto
+    @each $direction, $abbr in $directions {
+      .#{$breakpoints-class}m#{$abbr}-auto {
+        margin-#{$direction}: auto;
+      }
+    }
+
+    .#{$breakpoints-class}mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .#{$breakpoints-class}my-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .#{$breakpoints-class}m-auto {
+      margin: auto;
+    }
+  }
+}
