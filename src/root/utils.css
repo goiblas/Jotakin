@@ -1,0 +1,7 @@
+:root {
+  /* Duration */
+  --duration-sm: 0.1s;
+  --duration-md: 0.25s;
+  --duration-lg: 0.5s;
+  --duration-base: var(--duration-md);
+}

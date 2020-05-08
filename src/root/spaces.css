@@ -1,0 +1,87 @@
+:root {
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 3.5rem;
+  --space-4xl: 4rem;
+
+  --space-0: 0;
+  --space-auto: auto;
+  --space-base: var(--space-md);
+}
+
+@media (min-width: 544px) {
+  :root {
+    --sm_space-2xs: var(--space-2xs);
+    --sm_space-xs: var(--space-xs);
+    --sm_space-sm: var(--space-sm);
+    --sm_space-md: var(--space-md);
+    --sm_space-lg: var(--space-lg);
+    --sm_space-xl: var(--space-xl);
+    --sm_space-2xl: var(--space-2xl);
+    --sm_space-3xl: var(--space-3xl);
+    --sm_space-4xl: var(--space-4xl);
+
+    --sm_space-0: 0;
+    --sm_space-auto: auto;
+    --sm_space-base: var(--space-md);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --md_space-2xs: var(--space-2xs);
+    --md_space-xs: var(--space-xs);
+    --md_space-sm: var(--space-sm);
+    --md_space-md: var(--space-md);
+    --md_space-lg: var(--space-lg);
+    --md_space-xl: var(--space-xl);
+    --md_space-2xl: var(--space-2xl);
+    --md_space-3xl: var(--space-3xl);
+    --md_space-4xl: var(--space-4xl);
+
+    --md_space-0: 0;
+    --md_space-auto: auto;
+    --md_space-base: var(--space-md);
+  }
+}
+
+@media (min-width: 1012px) {
+  :root {
+    --lg_space-2xs: var(--space-2xs);
+    --lg_space-xs: var(--space-xs);
+    --lg_space-sm: var(--space-sm);
+    --lg_space-md: var(--space-md);
+    --lg_space-lg: var(--space-lg);
+    --lg_space-xl: var(--space-xl);
+    --lg_space-2xl: var(--space-2xl);
+    --lg_space-3xl: var(--space-3xl);
+    --lg_space-4xl: var(--space-4xl);
+
+    --lg_space-0: 0;
+    --lg_space-auto: auto;
+    --lg_space-base: var(--space-md);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --xl_space-2xs: var(--space-2xs);
+    --xl_space-xs: var(--space-xs);
+    --xl_space-sm: var(--space-sm);
+    --xl_space-md: var(--space-md);
+    --xl_space-lg: var(--space-lg);
+    --xl_space-xl: var(--space-xl);
+    --xl_space-2xl: var(--space-2xl);
+    --xl_space-3xl: var(--space-3xl);
+    --xl_space-4xl: var(--space-4xl);
+
+    --xl_space-0: 0;
+    --xl_space-auto: auto;
+    --xl_space-base: var(--space-md);
+  }
+}

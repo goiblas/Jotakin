@@ -1,0 +1,31 @@
+body {
+  line-height: var(--line-height-base);
+  font-size: var(--text-base);
+}
+.text-small {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-lg);
+}
+h1 {
+  font-size: var(--text-5xl);
+  line-height: var(--line-height-xs);
+}
+h2 {
+  font-size: var(--text-4xl);
+  line-height: var(--line-height-sm);
+}
+h3 {
+  font-size: var(--text-3xl);
+  line-height: var(--line-height-sm);
+}
+h4 {
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-sm);
+}
+h5 {
+  font-size: var(--text-xl);
+  line-height: var(--line-height-sm);
+}
+h6 {
+  font-size: var(--text-lg);
+}

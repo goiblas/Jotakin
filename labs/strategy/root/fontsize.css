@@ -1,0 +1,40 @@
+:root {
+  /* https://www.modularscale.com/?1&rem&1.1 */
+  --text-xs: 0.751rem;
+  --text-sm: 0.826rem;
+  --text-base: 0.909rem;
+  --text-lg: 1.1rem;
+  --text-xl: 1.21rem;
+  --text-2xl: 1.331rem;
+  --text-3xl: 1.611rem;
+  --text-4xl: 1.772rem;
+  --text-5xl: 1.949rem;
+  --text-6xl: 2.144rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-xs: 0.756rem;
+    --text-sm: 0.87rem;
+    --text-base: 1rem;
+    --text-lg: 1.15rem;
+    --text-xl: 1.322rem;
+    --text-2xl: 1.749rem;
+    --text-3xl: 2.011rem;
+    --text-4xl: 2.313rem;
+    --text-5xl: 2.66rem;
+    --text-6xl: 3.059rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --text-lg: 1.24rem;
+    --text-xl: 1.538rem;
+    --text-2xl: 1.907rem;
+    --text-3xl: 2.364rem;
+    --text-4xl: 2.932rem;
+    --text-5xl: 3.635rem;
+    --text-6xl: 4.508rem;
+  }
+}
