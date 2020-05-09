@@ -1,0 +1,15 @@
+:root {
+  --control-height-value: 40;
+  --control-height: calc(var(--control-height-value * 1px));
+  --control-height-lg-value: 48;
+  --control-height-lg: calc(var(--control-height-lg-value * 1px));
+  --control-height-sm-value: 32;
+  --control-height-sm: calc(var(--control-height-sm-value * 1px));
+  --control-border-width-value: 1;
+  --control-border-width: calc(var(--control-border-width) * 1px);
+}
+@media (min-width: 768px) {
+  :root {
+    --control-height-lg-value: 56;
+  }
+}
