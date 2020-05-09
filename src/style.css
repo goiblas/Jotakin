@@ -3,3 +3,6 @@
 @import "./root/decoration.css";
 @import "./root/types.css";
 @import "./root/utils.css";
+
+@import "./root/spaces-responsive.css";
+@import "./root/types-responsive.css";
