@@ -2,18 +2,19 @@
   /* Duration */
   --duration-transitions: 0.25s;
 
-  /* timing functions */
+  /* Timing functions */
   /* credits: https://github.com/ai/easings.net */
   --bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
   --ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
 
-  /* Containers */
-  --container-sm: 540px;
-  --container-md: 640px;
-  --container-lg: 840px;
-  --container-xl: 840px;
-
-  --container-base: 840px;
+  /* maxWidth */
+  --max-width-2xs: 26rem;
+  --max-width-xxs: 32rem;
+  --max-width-xs: 38rem;
+  --max-width-sm: 48rem;
+  --max-width-md: 64rem;
+  --max-width-lg: 80rem;
+  --max-width-xl: 90rem;
 }
