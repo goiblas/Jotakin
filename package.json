@@ -1,0 +1,23 @@
+{
+  "name": "jotakin",
+  "version": "0.0.0",
+  "description": "CSS Framework",
+  "main": "dist/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docsify serve ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:goiblas/Jotakin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goiblas/Jotakin/issues"
+  },
+  "homepage": "https://github.com/goiblas/Jotakin#readme",
+  "devDependencies": {
+    "docsify-cli": "^4.4.0"
+  }
+}
