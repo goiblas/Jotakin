@@ -7,7 +7,7 @@ Documentación en markdown generada por [docsify](https://docsify.js.org/#/)
 ```css
 body: {
   background: white;
-  color: black;
+  color: var(--color-white);
 }
 ```
 
